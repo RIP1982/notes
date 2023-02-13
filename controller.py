@@ -1,3 +1,4 @@
+import filter
 import remove
 from notes import Notes
 import create
@@ -30,7 +31,7 @@ def start_button():
         elif cmd.lower() == "view":
             view.readerFromCsv("notes.csv")
         elif cmd.lower() == "filter":
-            print(filter)
+            filter.filter("notes.csv")
         elif cmd.lower() == "exit":
             break
         else:
